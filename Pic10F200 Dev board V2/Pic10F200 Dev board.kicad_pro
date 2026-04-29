@@ -225,7 +225,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -643,7 +643,7 @@
       {
         "filename": "Pic10F200 Dev board.kicad_sch",
         "name": "Pic10F200 Dev board",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "6a8db234-df6c-44c5-847a-0134675428ef"
       }
     ],
     "used_designators": "",
@@ -652,7 +652,7 @@
   "sheets": [
     [
       "6a8db234-df6c-44c5-847a-0134675428ef",
-      "Racine"
+      "Pic10F200 Dev board"
     ]
   ],
   "text_variables": {},
