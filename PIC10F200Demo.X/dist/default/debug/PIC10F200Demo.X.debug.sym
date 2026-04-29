@@ -1,0 +1,31 @@
+__S0 0 0 ABS 0
+__S1 0 0 ABS 0
+start 0 0 CODE 0
+__Hconfig 1000 0 CONFIG 4
+__Lconfig 0 0 CONFIG 4
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+__Hdata 0 0 ABS 0
+__Ldata 0 0 ABS 0
+__Hudata_bank0 0 0 ABS 0
+__Ludata_bank0 0 0 ABS 0
+__H__absolute__ 0 0 ABS 0
+__L__absolute__ 0 0 ABS 0
+__Hudata 0 0 ABS 0
+__Ludata 0 0 ABS 0
+__Hspace_0 4 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__Hspace_1 0 0 ABS 0
+__Lspace_1 0 0 ABS 0
+__Hspace_4 1FFF 0 ABS 0
+__Lspace_4 0 0 ABS 0
+__Hreset_vec 0 0 ABS 0
+__Lreset_vec 0 0 ABS 0
+%segments
+%locals
+build/default/debug/main.o
+main.asm
+13 0 0 CODE 0
+14 1 0 CODE 0
+15 2 0 CODE 0
+18 3 0 CODE 0

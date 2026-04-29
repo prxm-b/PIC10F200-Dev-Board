@@ -1,0 +1,41 @@
+__S0 0 0 ABS 0
+__S1 0 0 ABS 0
+start 0 0 CODE 0
+__Hconfig 1000 0 CONFIG 4
+__Lconfig 0 0 CONFIG 4
+__Hcode 0 0 ABS 0
+__Lcode 0 0 ABS 0
+__Hdata 0 0 ABS 0
+__Ldata 0 0 ABS 0
+__Hudata_bank0 0 0 ABS 0
+__Ludata_bank0 0 0 ABS 0
+__H__absolute__ 0 0 ABS 0
+__L__absolute__ 0 0 ABS 0
+__Hudata 0 0 ABS 0
+__Ludata 0 0 ABS 0
+__Hspace_0 10 0 ABS 0
+__Lspace_0 0 0 ABS 0
+__Hspace_1 0 0 ABS 0
+__Lspace_1 0 0 ABS 0
+__Hspace_4 1FFF 0 ABS 0
+__Lspace_4 0 0 ABS 0
+%segments
+%locals
+build/default/production/main.o
+main.asm
+12 0 0 CODE 0
+13 1 0 CODE 0
+14 2 0 CODE 0
+15 3 0 CODE 0
+16 4 0 CODE 0
+19 5 0 CODE 0
+20 6 0 CODE 0
+23 7 0 CODE 0
+24 8 0 CODE 0
+26 9 0 CODE 0
+27 A 0 CODE 0
+29 B 0 CODE 0
+30 C 0 CODE 0
+31 D 0 CODE 0
+32 E 0 CODE 0
+34 F 0 CODE 0
