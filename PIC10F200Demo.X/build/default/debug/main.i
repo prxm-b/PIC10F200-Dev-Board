@@ -229,20 +229,49 @@ ENDM
 # 2 "main.asm" 2
 
 
-; Bare minimum config
-config WDTE = OFF
+; --- CONFIGURATION ---
+config WDTE = OFF, CP = OFF, MCLRE = OFF
 
-; We use the EXACT name the error is looking for
-PSECT reset_vec,class=CODE,delta=2,abs
-org 0x0000
+; RAM variables
+D1 EQU 0x10
+D2 EQU 0x11
+D3 EQU 0x12
+
+PSECT code,class=CODE,delta=2,abs
+org 0x00
 
 global start
 start:
-    MOVLW 0xFE ; ((GPIO) and 01Fh), 0 output
+    MOVWF OSCCAL ; Load factory calibration
+    MOVLW 0 ; Digital I/O mode
+    OPTION
+    MOVLW 0xFE ; ((GPIO) and 01Fh), 0 as Output
     TRIS GPIO
-    BSF GPIO, 0 ; LED ON
 
-loop:
-    GOTO loop
+main_loop:
+    MOVLW 0x01
+    XORWF GPIO, f ; Toggle ((GPIO) and 01Fh), 0
+
+    ;1Second delay
+    ; Approximately 1,000,000 cycles
+    ; Ncycles = d3*(d1*(d2*3))
+    MOVLW 7 ; Outer loop (Adjust this for fine-tuning)
+    MOVWF D3
+d3_loop:
+    MOVLW 255
+    MOVWF D1
+d1_loop:
+    MOVLW 185
+    MOVWF D2
+d2_loop:
+    DECFSZ D2, f ; 1 cycle (2 if skip)
+    GOTO d2_loop ; 2 cycles
+    DECFSZ D1, f
+    GOTO d1_loop
+    DECFSZ D3, f
+    GOTO d3_loop
+    ; --- 1 SECOND DELAY END ---
+
+    GOTO main_loop
 
 END start

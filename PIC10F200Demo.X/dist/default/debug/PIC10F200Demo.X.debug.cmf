@@ -12,7 +12,7 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $build/default/debug/main.o
-reset_vec CODE 0 0 0 4 2 1
+code CODE 0 0 0 14 2 1
 config CONFIG 4 FFF FFF 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -22,13 +22,11 @@ config CONFIG 4 FFF FFF 1 2 1
 %UNUSED
 RAM 10-1D 1
 BANK0 10-1D 1
-ENTRY 4-FF 2
+ENTRY 14-FF 2
 IDLOC 100-103 2
-CODE 4-FF 2
-SFR0 8-F 1
-COMMON 1C-1F 1
-STRCODE 4-FF 2
-STRING 4-FF 2
+CODE 14-FF 2
+STRCODE 14-FF 2
+STRING 14-FF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -43,10 +41,26 @@ STRING 4-FF 2
 # All other numeric values are in decimal.
 %LINETAB
 $build/default/debug/main.o
-0 reset_vec CODE >13:C:\Dev\Projects\PIC10F200Demo\PIC10F200Demo.X\main.asm
-1 reset_vec CODE >14:C:\Dev\Projects\PIC10F200Demo\PIC10F200Demo.X\main.asm
-2 reset_vec CODE >15:C:\Dev\Projects\PIC10F200Demo\PIC10F200Demo.X\main.asm
-3 reset_vec CODE >18:C:\Dev\Projects\PIC10F200Demo\PIC10F200Demo.X\main.asm
+0 code CODE >17:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+1 code CODE >18:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+2 code CODE >19:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+3 code CODE >20:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+4 code CODE >21:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+5 code CODE >24:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+6 code CODE >25:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+7 code CODE >30:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+8 code CODE >31:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+9 code CODE >33:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+A code CODE >34:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+B code CODE >36:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+C code CODE >37:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+D code CODE >39:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+E code CODE >40:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+F code CODE >41:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+10 code CODE >42:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+11 code CODE >43:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+12 code CODE >44:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
+13 code CODE >47:C:\Dev\Projects\PIC10F200-Dev-Board\PIC10F200Demo.X\main.asm
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -59,12 +73,12 @@ $build/default/debug/main.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 4 0 ABS 0 - -
+__Hspace_0 14 0 ABS 0 - -
 __Hspace_1 0 0 ABS 0 - -
 __Hspace_4 1FFF 0 ABS 0 - -
 __Hudata_bank0 0 0 ABS 0 udata_bank0 -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
-start 0 0 CODE 0 reset_vec build/default/debug/main.o
+start 0 0 CODE 0 code build/default/debug/main.o
 __Hudata 0 0 ABS 0 udata -
 __Hconfig 2000 0 CONFIG 4 config -
 __Ludata 0 0 ABS 0 udata -
@@ -78,10 +92,8 @@ __Lconfig 0 0 CONFIG 4 config -
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_4 0 0 ABS 0 - -
-__Hreset_vec 0 0 ABS 0 reset_vec -
 __Ludata_bank0 0 0 ABS 0 udata_bank0 -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
-__Lreset_vec 0 0 ABS 0 reset_vec -
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.

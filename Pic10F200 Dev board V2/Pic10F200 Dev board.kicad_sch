@@ -3112,7 +3112,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "5.1k"
 			(at 90.17 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)

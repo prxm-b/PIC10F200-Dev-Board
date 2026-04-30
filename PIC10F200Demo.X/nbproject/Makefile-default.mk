@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.asm
+SOURCEFILES_QUOTED_IF_SPACED=Toothbrush.asm
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Toothbrush.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Toothbrush.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o
+OBJECTFILES=${OBJECTDIR}/Toothbrush.o
 
 # Source Files
-SOURCEFILES=main.asm
+SOURCEFILES=Toothbrush.asm
 
 
 
@@ -89,21 +89,21 @@ FINAL_IMAGE_NAME_MINUS_EXTENSION=${DISTDIR}/PIC10F200Demo.X.${IMAGE_TYPE}
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: pic-as-assembler
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/main.o: main.asm  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/Toothbrush.o: Toothbrush.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main.o 
+	@${RM} ${OBJECTDIR}/Toothbrush.o 
 	${MP_AS} -mcpu=PIC10F200 -c \
-	-o ${OBJECTDIR}/main.o \
-	main.asm \
+	-o ${OBJECTDIR}/Toothbrush.o \
+	Toothbrush.asm \
 	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 else
-${OBJECTDIR}/main.o: main.asm  nbproject/Makefile-${CND_CONF}.mk 
+${OBJECTDIR}/Toothbrush.o: Toothbrush.asm  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main.o 
+	@${RM} ${OBJECTDIR}/Toothbrush.o 
 	${MP_AS} -mcpu=PIC10F200 -c \
-	-o ${OBJECTDIR}/main.o \
-	main.asm \
+	-o ${OBJECTDIR}/Toothbrush.o \
+	Toothbrush.asm \
 	  -mdfp="${DFP_DIR}/xc8"  -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 endif

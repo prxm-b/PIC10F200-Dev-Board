@@ -13,19 +13,33 @@ __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
 __Hudata 0 0 ABS 0
 __Ludata 0 0 ABS 0
-__Hspace_0 4 0 ABS 0
+__Hspace_0 14 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __Hspace_1 0 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hspace_4 1FFF 0 ABS 0
 __Lspace_4 0 0 ABS 0
-__Hreset_vec 0 0 ABS 0
-__Lreset_vec 0 0 ABS 0
 %segments
 %locals
 build/default/debug/main.o
 main.asm
-13 0 0 CODE 0
-14 1 0 CODE 0
-15 2 0 CODE 0
-18 3 0 CODE 0
+17 0 0 CODE 0
+18 1 0 CODE 0
+19 2 0 CODE 0
+20 3 0 CODE 0
+21 4 0 CODE 0
+24 5 0 CODE 0
+25 6 0 CODE 0
+30 7 0 CODE 0
+31 8 0 CODE 0
+33 9 0 CODE 0
+34 A 0 CODE 0
+36 B 0 CODE 0
+37 C 0 CODE 0
+39 D 0 CODE 0
+40 E 0 CODE 0
+41 F 0 CODE 0
+42 10 0 CODE 0
+43 11 0 CODE 0
+44 12 0 CODE 0
+47 13 0 CODE 0
