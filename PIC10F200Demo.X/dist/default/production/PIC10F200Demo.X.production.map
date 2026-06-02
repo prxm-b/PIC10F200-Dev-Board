@@ -6,11 +6,11 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.50\pic\dat\20240725155939_en.msgs \
   -cs -h+dist/default/production\PIC10F200Demo.X.production.sym \
   --cmf=dist/default/production\PIC10F200Demo.X.production.cmf -z -Q10F200 \
-  -oC:\Users\uhryj\AppData\Local\Temp\xcAs7nk.\driver_tmp_3.o \
+  -oC:\Users\uhryj\AppData\Local\Temp\xcAsj9c.\driver_tmp_3.o \
   --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/production/PIC10F200Demo.X.production.map -E1 --acfsm=1493 \
   -ACODE=00h-0FFh -ASTRCODE=00h-0FFh -ASTRING=00h-0FFh \
-  -AENTRY=00h-0FFh-0FFh -ABANK0=014h-01Dh -ARAM=014h-01Dh -AABS1=014h-01Fh \
+  -AENTRY=00h-0FFh-0FFh -ABANK0=010h-01Dh -ARAM=010h-01Dh -AABS1=010h-01Fh \
   -ACOMMON=01Ch-01Fh -ASFR0=00h-0Fh -ACONFIG=0FFFh-0FFFh -DCONFIG=2 \
   -AIDLOC=0100h-0103h -DIDLOC=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 \
   -DENTRY=2 build/default/production/Toothbrush.o 
@@ -24,12 +24,11 @@ Machine type is 10F200
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/production/Toothbrush.o
                 config                              FFF      FFF        1        0       4
-                code                                  0        0       37        0       0
-                udata                                 0        0       14        0       1
+                code                                  0        0       23        0       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                code                                  0        0       37         0
+                code                                  0        0       23         0
 
         CLASS   STRCODE        
 
@@ -40,7 +39,6 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   BANK0          
 
         CLASS   RAM            
-                udata                                 0        0       14         1
 
         CLASS   ABS1           
 
@@ -64,19 +62,19 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 UNUSED ADDRESS RANGES
 
         Name                Unused          Largest block    Delta
-        BANK0            0014-001D              A           1
-        CODE             0037-00FF             C9           2
-        ENTRY            0037-00FF             C9           2
+        BANK0            0010-001D              E           1
+        CODE             0023-00FF             DD           2
+        ENTRY            0023-00FF             DD           2
         IDLOC            0100-0103              4           2
-        RAM              0014-001D              A           1
-        STRCODE          0037-00FF             C9           2
-        STRING           0037-00FF             C9           2
+        RAM              0010-001D              E           1
+        STRCODE          0023-00FF             DD           2
+        STRING           0023-00FF             DD           2
 
                                   Symbol Table
 
 __H__absolute__ __absolute__ 0000  __Hcode         code         0000
 __Hconfig       config       1000  __Hdata         data         0000
-__Hspace_0      (abs)        0037  __Hspace_1      (abs)        0014
+__Hspace_0      (abs)        0023  __Hspace_1      (abs)        0000
 __Hspace_4      (abs)        1FFF  __Hudata        udata        0000
 __Hudata_bank0  udata_bank0  0000  __L__absolute__ __absolute__ 0000
 __Lcode         code         0000  __Lconfig       config       0000
